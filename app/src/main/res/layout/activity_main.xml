@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSettings"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/SteelBlue"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FlashLight App"
+        android:textSize="27sp"
+        android:textStyle="bold"/>
+</androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/flashlighttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FlashLight"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbarSettings"
+        android:textAlignment="center"
+        android:layout_marginTop="150dp"
+        android:textColor="@color/SteelBlue"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/viewbar"
+        android:layout_below="@+id/flashlighttext"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@color/DarkGray"
+
+
+
+        />
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textOn="ON"
+        android:layout_below="@+id/viewbar"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:textOff="OFF"
+        android:checked="true"
+        />
+
+</RelativeLayout>
